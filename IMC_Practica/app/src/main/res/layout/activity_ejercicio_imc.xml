@@ -35,7 +35,7 @@
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="39dp"
-        android:id="@+id/editText" />
+        android:id="@+id/Altura" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -43,9 +43,9 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:layout_above="@+id/Calcular"
-        android:layout_alignStart="@+id/editText"
+        android:layout_alignStart="@+id/Altura"
         android:layout_marginBottom="17dp"
-        android:id="@+id/editText2" />
+        android:id="@+id/Peso" />
 
     <Button
         android:text="Salir"
@@ -64,7 +64,7 @@
         android:id="@+id/textView2"
         android:text="Calcular el índice de Masa Corporal"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/editText" />
+        android:layout_alignStart="@+id/Altura" />
 
     <TextView
         android:text="Introduzca su Altura:"
