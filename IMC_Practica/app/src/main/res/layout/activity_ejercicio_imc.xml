@@ -10,8 +10,69 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.superpc.imc_practica.EjercicioIMC">
 
+    <Button
+        android:text="Calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/Calcular"
+        android:layout_above="@+id/Salir"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Introduzca su Peso:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:id="@+id/editText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_above="@+id/Calcular"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginBottom="17dp"
+        android:id="@+id/editText2" />
+
+    <Button
+        android:text="Salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/Salir"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView2"
+        android:text="Calcular el índice de Masa Corporal"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText" />
+
+    <TextView
+        android:text="Introduzca su Altura:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
