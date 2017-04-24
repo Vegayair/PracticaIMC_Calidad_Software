@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class EjercicioIMC extends AppCompatActivity implements View.OnClickListener{
 
-    EditText peso, altura;
+    EditText peso, altura; // declaracion de variables
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +28,7 @@ public class EjercicioIMC extends AppCompatActivity implements View.OnClickListe
     }
 
     public void onClick(View v) {
-
+        // metodo  de las acciones de los botones switch que sirve para saber cuando alguno de los campos esta vacio.
         switch (v.getId()) {
             case R.id.Salir:
                 System.exit(0);
@@ -50,14 +50,20 @@ public class EjercicioIMC extends AppCompatActivity implements View.OnClickListe
                 }
         }
     }
-    public void CalcuIMC(){
 
+
+
+    public void CalcuIMC(){
+        // metodo que  sirve para calcular el IMC
         IMC calcu = new IMC();
         float kg=Float.parseFloat(peso.getText().toString());
         float cm=Float.parseFloat(altura.getText().toString());
         calcu.calcula(kg,cm);
         float m = (cm / 100);
         float bmi = (kg / (m * m));
+
+
+        //Clasificacion de promedio de masa corporal , Delgado , normal , sobrepeso y obesidad por medio de un rango determinado.
         if (bmi < 18.5) {
             Toast.makeText(EjercicioIMC.this,
                     "Tu IMC es " + bmi + "\n" + "Estas delgado",
@@ -93,11 +99,13 @@ public class EjercicioIMC extends AppCompatActivity implements View.OnClickListe
             }
         }
     }
+
+
     public void limpiar(){
         peso.setText("");
         altura.setText("");
     }
-
+    // metodo para limpiar los campos , cada vez que se requiere otra consulta .
 }
 
 
