@@ -17,7 +17,7 @@ public class EjercicioIMC extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_ejercicio_imc);
 
         Button calcular = (Button) findViewById(R.id.Calcular);
-        Button salir = (Button) findViewById(R.id.Salir);
+        calcular.setOnClickListener(this);
 
         Button salir = (Button) findViewById(R.id.Salir);
         salir.setOnClickListener(this);
